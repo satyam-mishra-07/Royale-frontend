@@ -21,7 +21,7 @@ export default function AuthProvider({ children }) {
     
     try {
       setLoading(true);
-      const url = "http://localhost:3000/api/data/menu";
+      const url = "https://royale-backend.onrender.com/api/data/menu";
       const response = await fetch(url, {
         method: "GET"
       });
@@ -47,7 +47,7 @@ export default function AuthProvider({ children }) {
   const clearCart = async (userId) => {
     try {
       setLoading(true);
-      const response = await fetch('http://localhost:3000/api/cart/clear-cart', {
+      const response = await fetch('https://royale-backend.onrender.com/api/cart/clear-cart', {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json'
@@ -75,7 +75,7 @@ export default function AuthProvider({ children }) {
   const userAuthentication = async () => {
     try {
       setLoading(true);
-      const response = await fetch(`http://localhost:3000/api/auth/user`, {
+      const response = await fetch(`https://royale-backend.onrender.com/api/auth/user`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -97,7 +97,7 @@ export default function AuthProvider({ children }) {
   const cartIncrease = async (userId, foodId) => {
     try {
       setLoading(true);
-      const response = await fetch('http://localhost:3000/api/cart/add-to-cart', {
+      const response = await fetch('https://royale-backend.onrender.com/api/cart/add-to-cart', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -122,7 +122,7 @@ export default function AuthProvider({ children }) {
   const cartDecrease = async (userId, foodId) => {
     try {
       setLoading(true);
-      const response = await fetch('http://localhost:3000/api/cart/remove-from-cart', {
+      const response = await fetch('https://royale-backend.onrender.com/api/cart/remove-from-cart', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
