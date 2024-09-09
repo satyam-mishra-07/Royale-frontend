@@ -10,3 +10,33 @@
 * {
     font-family: 'gilroy';
 }
+
+.toastProgress {
+    background: #4caf50; /* Green progress bar */
+  }
+  
+  .toastBody {
+    font-size: 1rem; /* Responsive font size */
+    padding: 8px; /* Responsive padding */
+  }
+
+  .custom-toast-container {
+    margin-top: 20px; /* Adjust the top margin as needed */
+    max-width: 400px; /* Set the maximum width */
+    width: 90%; /* Make sure it is responsive */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for perfect centering */
+  }
+
+  @media (max-width: 768px) {
+    .custom-toast-container {
+      margin-top: 20px; /* Adjust the top margin for mobile screens */
+      max-width: 400px; /* Set the maximum width for mobile screens */
+      width: 90%; /* Ensure responsiveness */
+      left: 50%; /* Center horizontally */
+      transform: translateX(-50%); /* Adjust for perfect centering */
+    }
+  }
+  
+  
+  

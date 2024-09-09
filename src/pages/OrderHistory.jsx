@@ -37,7 +37,7 @@ export default function OrderHistory() {
   const fetchOrderHistory = async () => {
     try {
       const response = await fetch(
-        `http://localhost:3000/api/order/orderHistory?userID=${userData._id}`, // Correct URL with userID
+        `https://royale-backend.onrender.com/api/order/orderHistory?userID=${userData._id}`, // Correct URL with userID
         {
           method: 'GET',
           headers: {

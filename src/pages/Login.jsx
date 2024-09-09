@@ -7,7 +7,7 @@ const Login = () => {
 
   const navigate = useNavigate();
 
-  const URL = "http://localhost:3000/api/auth/login";
+  const URL = "https://royale-backend.onrender.com/api/auth/login";
   const [formData, setFormData] = useState({
     email: '',
     password: ''

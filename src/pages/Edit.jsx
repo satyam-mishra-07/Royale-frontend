@@ -45,7 +45,7 @@ export default function Edit() {
     }));
     console.log(formData);
   
-    const response = await fetch("http://localhost:3000/api/auth/update", {
+    const response = await fetch("https://royale-backend.onrender.com/api/auth/update", {
       method: "PUT",
       headers: {
         "Authorization" : `Bearer ${token}`,

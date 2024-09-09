@@ -39,7 +39,7 @@ export default function Footer() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Form Data Submitted:", contact);
-    const url = `http://localhost:3000/api/form/contact`
+    const url = `https://royale-backend.onrender.com/api/form/contact`
     try {
       const response = await fetch(url,{
         method:"POST",

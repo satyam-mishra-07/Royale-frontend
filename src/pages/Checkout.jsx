@@ -46,7 +46,7 @@ export default function Checkout() {
 
   const handlePlaceOrder = async () => {
     try {
-      const response = await fetch('http://localhost:3000/api/order/checkout', {
+      const response = await fetch('https://royale-backend.onrender.com/api/order/checkout', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { ToastContainer } from "react-toastify";
+import { ToastContainer, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import App from "./App.jsx";
 import "./index.css";
@@ -10,6 +10,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <AuthProvider>
     <React.StrictMode>
       <App />
+      {/* ToastContainer with custom styling */}
       <ToastContainer
         position="top-center"
         autoClose={3000}
@@ -21,9 +22,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         draggable
         pauseOnHover
         theme="colored"
-        transition:Bounce
+        transition={Bounce}
         progressClassName="toastProgress"
         bodyClassName="toastBody"
+        className="custom-toast-container" // Custom class for additional styling
       />
     </React.StrictMode>
   </AuthProvider>

@@ -7,7 +7,7 @@ const Register = () => {
 
   const navigate = useNavigate();
 
-  const URL = "http://localhost:3000/api/auth/register";
+  const URL = "https://royale-backend.onrender.com/api/auth/register";
 
   const [formData, setFormData] = useState({
     name: '',
