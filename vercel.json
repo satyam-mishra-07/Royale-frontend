@@ -1,0 +1,13 @@
+{
+    "builds": [
+      {
+        "src": "src/main.jsx",
+        "use": "@vercel/node"
+      }
+    ],
+    "framework": "vite",
+    "vite": {
+      "plugins": ["@vitejs/plugin-react"]
+    }
+  }
+  
