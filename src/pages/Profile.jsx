@@ -40,31 +40,29 @@ export default function Profile() {
             </div>
           </div>
 
-          {/* bg-tertiaryColor hover:bg-tertiaryColor2 */}
-
-          <div className="flex justify-center space-x-4 mt-8">
+          <div className="flex justify-center flex-wrap space-x-4 mt-8">
             <NavLink
               to={`/profile/${userData._id}/edit`}
-              className="bg-primaryColor hover:bg-tertiaryColor text-white font-medium text-lg py-2 px-6 rounded-full shadow-md transition duration-300"
+              className="flex items-center justify-center mx-2 my-2 bg-primaryColor hover:bg-tertiaryColor text-white font-medium text-lg py-2 px-6 rounded-full shadow-md transition duration-300"
             >
               Edit Profile
             </NavLink>
             <NavLink
               to="/order-history"
-              className="bg-primaryColor hover:bg-tertiaryColor text-white font-medium text-lg py-2 px-6 rounded-full shadow-md transition duration-300"
+              className="flex items-center justify-center mx-2 my-2 bg-primaryColor hover:bg-tertiaryColor text-white font-medium text-lg py-2 px-6 rounded-full shadow-md transition duration-300"
             >
               Order History
             </NavLink>
             <NavLink
               to="/cart"
-              className="bg-primaryColor hover:bg-tertiaryColor text-white font-medium text-lg py-2 px-6 rounded-full shadow-md transition duration-300"
+              className="flex items-center justify-center mx-2 my-2 bg-primaryColor hover:bg-tertiaryColor text-white font-medium text-lg py-2 px-6 rounded-full shadow-md transition duration-300"
             >
               View Cart
             </NavLink>
             <NavLink
               to="/logout"
               onClick={LogoutUser}
-              className="bg-primaryColor hover:bg-tertiaryColor text-white font-medium text-lg py-2 px-6 rounded-full shadow-md transition duration-300"
+              className="flex items-center justify-center mx-2 my-2 bg-primaryColor hover:bg-tertiaryColor text-white font-medium text-lg py-2 px-6 rounded-full shadow-md transition duration-300"
             >
               Logout
             </NavLink>
