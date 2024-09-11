@@ -160,7 +160,18 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://github.com/satyam-mishra-88"
+                href="https://www.linkedin.com/in/satyam-mishra-53617518a/"
+                className="hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <li className="text-xl font-medium hover:underline transform hover:-translate-y-1 hover:scale-100 transition-all duration-300 ease-in-out">
+                  Linkedin
+                </li>
+              </a>
+
+              <a
+                href="https://github.com/satyam-mishra-07"
                 className="hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"

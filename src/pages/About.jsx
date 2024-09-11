@@ -58,7 +58,7 @@ const About = () => {
                       </a>
                       <span className="mx-1"> • </span>
                       <a
-                        href="https://github.com/satyammishra123"
+                        href="https://github.com/satyam-mishra-07"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-700 hover:text-gray-900 transition duration-300"
